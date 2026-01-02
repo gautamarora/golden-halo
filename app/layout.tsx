@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import BottomNav from "@/components/BottomNav";
-import DarkModeToggle from "@/components/DarkModeToggle";
 
 export const metadata: Metadata = {
   title: "Halo",
@@ -14,9 +13,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="antialiased bg-white dark:bg-gray-950 transition-colors">
-        <DarkModeToggle />
+    <html lang="en" className="dark">
+      <body className="antialiased bg-gray-950 transition-colors">
         <div className="min-h-screen pb-16">
           <main className="max-w-screen-lg mx-auto">
             {children}
