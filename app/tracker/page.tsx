@@ -153,7 +153,7 @@ export default function Tracker() {
 
             <div>
               <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                Type (optional)
+                Type
               </label>
               <input
                 type="text"
@@ -161,6 +161,7 @@ export default function Tracker() {
                 onChange={(e) => setNewWorkout({ ...newWorkout, type: e.target.value })}
                 className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-800 dark:text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-golden"
                 placeholder="e.g., Strength Training, Run, HIIT"
+                required
               />
             </div>
 
