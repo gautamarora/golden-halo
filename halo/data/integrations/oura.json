@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1",
+    "date": "2026-01-02",
+    "sleepDuration": 7.5,
+    "restingHeartRate": 52,
+    "hrv": 65,
+    "source": "oura"
+  },
+  {
+    "id": "2",
+    "date": "2026-01-01",
+    "sleepDuration": 7.8,
+    "restingHeartRate": 51,
+    "hrv": 68,
+    "source": "oura"
+  },
+  {
+    "id": "3",
+    "date": "2025-12-31",
+    "sleepDuration": 6.9,
+    "restingHeartRate": 54,
+    "hrv": 61,
+    "source": "oura"
+  },
+  {
+    "id": "4",
+    "date": "2025-12-30",
+    "sleepDuration": 7.2,
+    "restingHeartRate": 53,
+    "hrv": 63,
+    "source": "oura"
+  },
+  {
+    "id": "5",
+    "date": "2025-12-29",
+    "sleepDuration": 7.1,
+    "restingHeartRate": 52,
+    "hrv": 64,
+    "source": "oura"
+  },
+  {
+    "id": "6",
+    "date": "2025-12-28",
+    "sleepDuration": 6.5,
+    "restingHeartRate": 55,
+    "hrv": 59,
+    "source": "oura"
+  },
+  {
+    "id": "7",
+    "date": "2025-12-27",
+    "sleepDuration": 7.4,
+    "restingHeartRate": 52,
+    "hrv": 66,
+    "source": "oura"
+  }
+]

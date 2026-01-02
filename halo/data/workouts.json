@@ -1,0 +1,66 @@
+[
+  {
+    "id": "1",
+    "date": "2026-01-02",
+    "type": "Lift",
+    "duration": 60,
+    "note": "Upper body strength",
+    "source": "manual"
+  },
+  {
+    "id": "2",
+    "date": "2025-12-31",
+    "type": "Run",
+    "duration": 30,
+    "note": "Easy recovery run",
+    "source": "manual"
+  },
+  {
+    "id": "3",
+    "date": "2025-12-29",
+    "type": "Lift",
+    "duration": 55,
+    "note": "Lower body",
+    "source": "manual"
+  },
+  {
+    "id": "4",
+    "date": "2025-12-27",
+    "type": "Conditioning",
+    "duration": 45,
+    "note": "HIIT session",
+    "source": "manual"
+  },
+  {
+    "id": "5",
+    "date": "2025-12-26",
+    "type": "Lift",
+    "duration": 60,
+    "note": "Full body",
+    "source": "manual"
+  },
+  {
+    "id": "6",
+    "date": "2025-12-24",
+    "type": "Yoga",
+    "duration": 40,
+    "note": "Recovery flow",
+    "source": "manual"
+  },
+  {
+    "id": "7",
+    "date": "2025-12-22",
+    "type": "Run",
+    "duration": 35,
+    "note": "Tempo run",
+    "source": "manual"
+  },
+  {
+    "id": "8",
+    "date": "2025-12-20",
+    "type": "Lift",
+    "duration": 65,
+    "note": "Upper body",
+    "source": "manual"
+  }
+]

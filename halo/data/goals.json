@@ -1,0 +1,35 @@
+[
+  {
+    "id": "1",
+    "title": "Monthly Training Volume",
+    "type": "training",
+    "target": 16,
+    "current": 8,
+    "unit": "workouts",
+    "period": "monthly",
+    "startDate": "2026-01-01",
+    "endDate": "2026-01-31"
+  },
+  {
+    "id": "2",
+    "title": "Body Composition",
+    "type": "body",
+    "target": 172,
+    "current": 175.2,
+    "unit": "lbs",
+    "period": "annual",
+    "startDate": "2026-01-01",
+    "endDate": "2026-12-31"
+  },
+  {
+    "id": "3",
+    "title": "Sleep Average",
+    "type": "health",
+    "target": 8,
+    "current": 7.2,
+    "unit": "hours",
+    "period": "monthly",
+    "startDate": "2026-01-01",
+    "endDate": "2026-01-31"
+  }
+]

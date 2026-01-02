@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "date": "2026-01-02",
+    "content": "Felt strong today. Upper body session went well, increased weight on bench press.",
+    "tags": ["Training"]
+  },
+  {
+    "id": "2",
+    "date": "2025-12-31",
+    "content": "Light recovery run. Kept heart rate low, focused on easy effort.",
+    "tags": ["Training", "Recovery"]
+  },
+  {
+    "id": "3",
+    "date": "2025-12-28",
+    "content": "Sleep quality was poor last night. Might need to adjust evening routine.",
+    "tags": ["Recovery"]
+  }
+]

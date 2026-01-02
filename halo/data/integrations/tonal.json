@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "date": "2026-01-02",
+    "workoutType": "Upper Body Strength",
+    "duration": 60,
+    "totalVolume": 8500,
+    "source": "tonal"
+  },
+  {
+    "id": "2",
+    "date": "2025-12-29",
+    "workoutType": "Lower Body Strength",
+    "duration": 55,
+    "totalVolume": 9200,
+    "source": "tonal"
+  },
+  {
+    "id": "3",
+    "date": "2025-12-26",
+    "workoutType": "Full Body",
+    "duration": 60,
+    "totalVolume": 10100,
+    "source": "tonal"
+  }
+]

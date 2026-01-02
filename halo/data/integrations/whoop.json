@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "date": "2026-01-02",
+    "strain": 14.2,
+    "recovery": 78,
+    "source": "whoop"
+  },
+  {
+    "id": "2",
+    "date": "2026-01-01",
+    "strain": 12.5,
+    "recovery": 82,
+    "source": "whoop"
+  },
+  {
+    "id": "3",
+    "date": "2025-12-31",
+    "strain": 10.8,
+    "recovery": 71,
+    "source": "whoop"
+  }
+]
