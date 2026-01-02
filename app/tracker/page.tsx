@@ -208,20 +208,21 @@ export default function Tracker() {
           <div key={workout.id} className="bg-gray-50 dark:bg-gray-900 rounded-xl p-4">
             <div className="flex justify-between items-start mb-2">
               <div className="flex-1">
-                <div className="flex items-center gap-2 mb-1">
-                  <h3 className="font-semibold text-gray-900 dark:text-white">
-                    {workout.type || 'Workout'}
-                  </h3>
-                  <span className="text-xs px-2 py-0.5 bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-400 rounded">
-                    {workout.source}
-                  </span>
-                </div>
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-1">
+                  {workout.source}
+                </h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">{formatDate(workout.date)}</p>
               </div>
               <span className="text-sm text-gray-600 dark:text-gray-400">{workout.duration} min</span>
             </div>
-            {workout.note && (
-              <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">{workout.note}</p>
+            {(workout.type || workout.note) && (
+              <div className="pt-2 border-t border-gray-200 dark:border-gray-700">
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  {workout.type && <span className="font-medium">{workout.type}</span>}
+                  {workout.type && workout.note && <span> • </span>}
+                  {workout.note && <span>{workout.note}</span>}
+                </p>
+              </div>
             )}
           </div>
         ))}
