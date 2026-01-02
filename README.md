@@ -1,4 +1,4 @@
-# Golden Halo
+# Halo
 
 A single AI health dashboard for fitness goals and tracking.
 

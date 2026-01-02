@@ -36,7 +36,7 @@ export default function Goals() {
   if (loading) {
     return (
       <div className="flex items-center justify-center min-h-screen">
-        <p className="text-gray-400">Loading...</p>
+        <p className="text-gray-400 dark:text-gray-500">Loading...</p>
       </div>
     );
   }
@@ -71,20 +71,20 @@ export default function Goals() {
     <div className="px-6 py-8">
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-1">Goals</h1>
-        <p className="text-gray-500">Track your fitness objectives</p>
+        <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-1">Goals</h1>
+        <p className="text-gray-500 dark:text-gray-400">Track your fitness objectives</p>
       </div>
 
       {/* Goals List */}
       <div className="space-y-4">
         {goals.map((goal) => (
-          <div key={goal.id} className="bg-gray-50 rounded-2xl p-6">
+          <div key={goal.id} className="bg-gray-50 dark:bg-gray-900 rounded-2xl p-6">
             <div className="flex justify-between items-start mb-4">
               <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-1">
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-1">
                   {goal.title}
                 </h3>
-                <p className="text-sm text-gray-500 capitalize">
+                <p className="text-sm text-gray-500 dark:text-gray-400 capitalize">
                   {goal.period} • {goal.type}
                 </p>
               </div>
@@ -96,12 +96,12 @@ export default function Goals() {
             {/* Progress Bar */}
             <div className="mb-4">
               <div className="flex justify-between items-center mb-2">
-                <span className="text-sm text-gray-600">Progress</span>
-                <span className="text-sm font-medium text-gray-900">
+                <span className="text-sm text-gray-600 dark:text-gray-400">Progress</span>
+                <span className="text-sm font-medium text-gray-900 dark:text-white">
                   {goal.progress || 0}%
                 </span>
               </div>
-              <div className="w-full bg-gray-200 rounded-full h-2">
+              <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
                 <div
                   className="bg-golden rounded-full h-2 transition-all"
                   style={{ width: `${Math.min(goal.progress || 0, 100)}%` }}
@@ -110,16 +110,16 @@ export default function Goals() {
             </div>
 
             {/* Current vs Target */}
-            <div className="flex justify-between items-center pt-4 border-t border-gray-200">
+            <div className="flex justify-between items-center pt-4 border-t border-gray-200 dark:border-gray-700">
               <div>
-                <p className="text-xs text-gray-500 mb-1">Current</p>
-                <p className="text-lg font-semibold text-gray-900">
+                <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">Current</p>
+                <p className="text-lg font-semibold text-gray-900 dark:text-white">
                   {goal.current} {goal.unit}
                 </p>
               </div>
               <div className="text-right">
-                <p className="text-xs text-gray-500 mb-1">Target</p>
-                <p className="text-lg font-semibold text-gray-900">
+                <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">Target</p>
+                <p className="text-lg font-semibold text-gray-900 dark:text-white">
                   {goal.target} {goal.unit}
                 </p>
               </div>
@@ -129,7 +129,7 @@ export default function Goals() {
 
         {goals.length === 0 && (
           <div className="text-center py-12">
-            <p className="text-gray-400">No goals set yet</p>
+            <p className="text-gray-400 dark:text-gray-500">No goals set yet</p>
           </div>
         )}
       </div>

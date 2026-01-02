@@ -96,7 +96,7 @@ ${recentJournal.map(j => `- ${j.date} [${j.tags.join(', ')}]: ${j.content}`).joi
 }
 
 function getSystemPrompt(context: string): string {
-  return `You are a fitness analyst for Golden Halo, an AI-powered fitness dashboard. Your role is to provide calm, factual, analytical insights about the user's fitness data.
+  return `You are a fitness analyst for Halo, an AI-powered fitness dashboard. Your role is to provide calm, factual, analytical insights about the user's fitness data.
 
 Core principles:
 - Be an analyst, not a cheerleader

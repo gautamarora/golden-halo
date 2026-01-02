@@ -97,7 +97,7 @@ export default function Journal() {
   if (loading) {
     return (
       <div className="flex items-center justify-center min-h-screen">
-        <p className="text-gray-400">Loading...</p>
+        <p className="text-gray-400 dark:text-gray-500">Loading...</p>
       </div>
     );
   }
@@ -107,8 +107,8 @@ export default function Journal() {
       {/* Header */}
       <div className="mb-8 flex justify-between items-center">
         <div>
-          <h1 className="text-3xl font-bold text-gray-900 mb-1">Journal</h1>
-          <p className="text-gray-500">Capture context for your training</p>
+          <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-1">Journal</h1>
+          <p className="text-gray-500 dark:text-gray-400">Capture context for your training</p>
         </div>
         <button
           onClick={() => setShowAddForm(!showAddForm)}
@@ -120,30 +120,30 @@ export default function Journal() {
 
       {/* Add Entry Form */}
       {showAddForm && (
-        <div className="bg-gray-50 rounded-2xl p-6 mb-6">
-          <h3 className="text-lg font-semibold text-gray-900 mb-4">New Entry</h3>
+        <div className="bg-gray-50 dark:bg-gray-900 rounded-2xl p-6 mb-6">
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">New Entry</h3>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                 Date
               </label>
               <input
                 type="date"
                 value={newEntry.date}
                 onChange={(e) => setNewEntry({ ...newEntry, date: e.target.value })}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-golden"
+                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-800 dark:text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-golden"
                 required
               />
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                 Entry
               </label>
               <textarea
                 value={newEntry.content}
                 onChange={(e) => setNewEntry({ ...newEntry, content: e.target.value })}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-golden"
+                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-800 dark:text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-golden"
                 rows={5}
                 placeholder="How are you feeling? What happened today?"
                 required
@@ -151,7 +151,7 @@ export default function Journal() {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                 Tags (optional)
               </label>
               <div className="flex flex-wrap gap-2">
@@ -163,7 +163,7 @@ export default function Journal() {
                     className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
                       newEntry.tags.includes(tag)
                         ? 'bg-golden text-white'
-                        : 'bg-white border border-gray-300 text-gray-700 hover:border-golden'
+                        : 'bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:border-golden'
                     }`}
                   >
                     {tag}
@@ -185,9 +185,9 @@ export default function Journal() {
       {/* Entries List */}
       <div className="space-y-4">
         {entries.map((entry) => (
-          <div key={entry.id} className="bg-gray-50 rounded-xl p-5">
+          <div key={entry.id} className="bg-gray-50 dark:bg-gray-900 rounded-xl p-5">
             <div className="flex justify-between items-start mb-3">
-              <p className="text-sm font-medium text-gray-500">
+              <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
                 {formatDate(entry.date)}
               </p>
               {entry.tags.length > 0 && (
@@ -195,7 +195,7 @@ export default function Journal() {
                   {entry.tags.map(tag => (
                     <span
                       key={tag}
-                      className="text-xs px-2 py-1 bg-white rounded-full text-gray-600"
+                      className="text-xs px-2 py-1 bg-white dark:bg-gray-800 rounded-full text-gray-600 dark:text-gray-400"
                     >
                       {tag}
                     </span>
@@ -203,7 +203,7 @@ export default function Journal() {
                 </div>
               )}
             </div>
-            <p className="text-gray-800 leading-relaxed whitespace-pre-wrap">
+            <p className="text-gray-800 dark:text-gray-200 leading-relaxed whitespace-pre-wrap">
               {entry.content}
             </p>
           </div>
@@ -211,7 +211,7 @@ export default function Journal() {
 
         {entries.length === 0 && !showAddForm && (
           <div className="text-center py-12">
-            <p className="text-gray-400">No journal entries yet</p>
+            <p className="text-gray-400 dark:text-gray-500">No journal entries yet</p>
           </div>
         )}
       </div>

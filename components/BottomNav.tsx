@@ -15,7 +15,7 @@ export default function BottomNav() {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 safe-area-inset-bottom">
+    <nav className="fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-950 border-t border-gray-200 dark:border-gray-800 safe-area-inset-bottom">
       <div className="max-w-screen-lg mx-auto px-4">
         <div className="flex justify-around items-center h-16">
           {tabs.map((tab) => {
@@ -27,7 +27,7 @@ export default function BottomNav() {
                 className={`flex flex-col items-center justify-center flex-1 h-full transition-colors ${
                   isActive
                     ? 'text-golden'
-                    : 'text-gray-400 hover:text-gray-600'
+                    : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'
                 }`}
               >
                 <span className="text-2xl mb-0.5">{tab.icon}</span>
