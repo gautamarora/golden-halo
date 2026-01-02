@@ -106,6 +106,36 @@ halo/
 - Export/import functionality
 - iOS companion app
 
+## Deployment
+
+### Deploy to Vercel
+
+This project is configured for easy deployment to Vercel:
+
+1. **Install Vercel CLI** (if not already installed):
+```bash
+npm install -g vercel
+```
+
+2. **Deploy**:
+```bash
+vercel
+```
+
+Or simply push to GitHub and import the repository at [vercel.com](https://vercel.com).
+
+3. **Set Environment Variables**:
+   - In Vercel dashboard, go to Project Settings → Environment Variables
+   - Add `ANTHROPIC_API_KEY` with your API key from [console.anthropic.com](https://console.anthropic.com/)
+   - This enables the Coach feature
+
+4. **Production deployment**:
+```bash
+vercel --prod
+```
+
+The app will be automatically deployed with each push to your main branch.
+
 ## License
 
 Proprietary
